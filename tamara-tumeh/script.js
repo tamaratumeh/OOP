@@ -14,13 +14,13 @@ function Student(name, age, grade) {
             console.log("Invalid grade Only 'A' or 'F' are allowed.");
         }
     };
-     this.introduce = function () {
+}
+ Student.prototype.introduce = function () {
         console.log(`Hi, my name is ${this.name}, I’m ${this.age} years old, and I’m in grade ${Grade}`);
     };
-}
 
-const student1 = new Student("tamara", 21, "A");
+const student1 = new Student("tamara", 21, "A")
 student1.introduce()
-student1.setGrade("F"); 
+student1.setGrade("F")
 console.log(student1.getGrade())
 student1.setGrade('B')

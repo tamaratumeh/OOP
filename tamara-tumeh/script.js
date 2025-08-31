@@ -1,7 +1,7 @@
-function Student(name, age, introduce) {
+function Student(name, age, initialGrade) {
     this.name = name;
     this.age = age;
-    let grade; 
+    let grade = initialGrade; 
 
     this.getGrade = function () {
         return grade;
@@ -17,7 +17,7 @@ function Student(name, age, introduce) {
 }
 
  Student.prototype.introduce = function () {
-        console.log(`Hi, my name is ${this.name}, I’m ${this.age} years old, and I’m in grade ${this.getGradegrade}`);
+        console.log(`Hi, my name is ${this.name}, I’m ${this.age} years old, and I’m in grade ${this.getGrade()}`);
     };
 
 const student1 = new Student("tamara", 21, "A");
